@@ -20,6 +20,7 @@ class Selenium::WebDriver::Firefox::Profile
 
     # Prevent "Welcome!" tab
     self["extensions.firebug.showFirstRunPage"] = false
+    self["extensions.firebug.currentVersion"] = version
 
     # Enable for all sites.
     self["extensions.firebug.allPagesActivation"] = "on"
